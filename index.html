@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | 新手设计师</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* 头部 */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 0.5rem 0.8rem;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        /* 作品卡片区域 */
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            border-left: 5px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+        .card p {
+            color: #475569;
+            margin-bottom: 1rem;
+        }
+        .card a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        /* 关于我 */
+        .about {
+            background: white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 头部信息 -->
+    <div class="hero">
+        <div class="avatar">🎨</div>
+        <h1>你好，我是 李小萌</h1>
+        <div class="tagline">视觉设计 · 前端新手 · 创意爱好者</div>
+        <div class="contact-links">
+            <a href="#">📧 xiaomeng@email.com</a>
+            <a href="#">💼 GitHub</a>
+            <a href="#">📱 小红书</a>
+        </div>
+    </div>
+
+    <!-- 作品区域 -->
+    <h2>✨ 部分作品</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>📌 品牌设计 – 植物咖啡</h3>
+            <p>为一家社区咖啡馆设计了Logo、菜单和纸杯包装，风格偏向自然手绘。</p>
+            <a href="#">查看详情 →</a>
+        </div>
+        <div class="card">
+            <h3>🖥️ 个人博客项目</h3>
+            <p>用HTML/CSS搭建了一个极简博客，练习响应式布局和字体排版。</p>
+            <a href="#">查看详情 →</a>
+        </div>
+        <div class="card">
+            <h3>🎨 插画练习 – 四季系列</h3>
+            <p>四幅数字插画，表现春夏秋冬的色彩情绪，使用Procreate绘制。</p>
+            <a href="#">查看详情 →</a>
+        </div>
+    </div>
+
+    <!-- 关于我 -->
+    <div class="about">
+        <h2>🧑‍🎨 关于我</h2>
+        <p>我是来自上海的创意工作者，热爱将想法变成视觉。目前正在自学前端和UI设计，希望通过作品集找到合作机会。平时喜欢摄影和逛展，相信好的设计能带来微小但美好的改变。</p>
+        <p><strong>可用技能：</strong> Photoshop · Figma · HTML/CSS · 基础JavaScript</p>
+    </div>
+
+    <footer>
+        © 2025 李小萌 · 建造于 GitHub Pages
+    </footer>
+</div>
+</body>
+</html>我的个人网站首页
