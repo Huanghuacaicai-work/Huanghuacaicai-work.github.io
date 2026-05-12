@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>包装设计 - 图片展示 | 作品集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-description {
+            color: #475569;
+            margin-bottom: 2rem;
+            border-left: 3px solid #3b82f6;
+            padding-left: 1rem;
+        }
+        /* 图片网格 */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .image-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .image-card:hover {
+            transform: translateY(-4px);
+        }
+        .image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+        .image-caption {
+            padding: 0.75rem;
+            font-size: 0.9rem;
+            color: #475569;
+            text-align: center;
+        }
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+        }
+        /* 提示 */
+        .tip {
+            background: #e6f0ff;
+            padding: 0.5rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← 返回作品集首页</a>
+    
+    <h1>📦 深圳品牌包装设计 - 图片展示</h1>
+    <div class="project-description">
+        以下是该项目的主要设计稿、细节图和实拍效果。点击任意图片可放大查看。
+    </div>
+
+    <!-- 图片网格：把你的图片文件名替换到 src="..." 里 -->
+    <div class="image-grid">
+        <div class="image-card">
+            <img src="baozhuang1.jpg" alt="包装主视觉" onclick="window.open(this.src)">
+            <div class="image-caption">主视觉设计</div>
+        </div>
+        <div class="image-card">
+            <img src="baozhuang2.jpg" alt="细节图" onclick="window.open(this.src)">
+            <div class="image-caption">烫金工艺细节</div>
+        </div>
+        <div class="image-card">
+            <img src="baozhuang3.jpg" alt="C4D效果图" onclick="window.open(this.src)">
+            <div class="image-caption">C4D渲染效果</div>
+        </div>
+        <div class="image-card">
+            <img src="baozhuang-sketch.jpg" alt="草图" onclick="window.open(this.src)">
+            <div class="image-caption">前期手绘草图</div>
+        </div>
+        <!-- 如果你想添加更多图片，复制上面的 <div class="image-card"> 整块即可 -->
+    </div>
+
+    <div class="tip">
+        💡 提示：点击图片会在新标签页打开高清原图。
+    </div>
+
+    <footer>
+        © 2026 黄花荣 - 包装设计项目
+    </footer>
+</div>
+</body>
+</html>
